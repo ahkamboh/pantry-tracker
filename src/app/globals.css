@@ -3,31 +3,144 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --smoky-black: hsl(245, 100%, 50%);
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
+
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* .bh-back {
+  background-image: url(/Frame1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+} */
+
+
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('/fonts/ClashDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('/fonts/ClashDisplay-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Light';
+  src: url('/fonts/ClashDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('/fonts/ClashDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('/fonts/ClashDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('/fonts/ClashDisplay-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-bold';
+  src: url('/fonts/futura-bold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-medium';
+  src: url('/fonts/futura-medium.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-book';
+  src: url('/fonts/futura-book.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ClashDisplay-Semibold {
+  font-family: 'ClashDisplay-Semibold', sans-serif;
+}
+
+.ClashDisplay-Regular {
+  font-family: 'ClashDisplay-Regular', sans-serif;
+}
+
+.ClashDisplay-Bold {
+  font-family: 'ClashDisplay-Bold', sans-serif;
+}
+
+.ClashDisplay-Light {
+  font-family: 'ClashDisplay-Light', sans-serif;
+}
+
+.ClashDisplay-Medium {
+  font-family: 'ClashDisplay-Medium', sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+::selection{
+  background-color: #445f5c;
+}
+::-webkit-scrollbar  {
+ 
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#445f5c;
+  border-radius: 10px;
+}
+
+
+body {
+  scroll-behavior: smooth;
 }
