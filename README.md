@@ -96,4 +96,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
  
 ## Contact
 
-- **Reach out me **: [LinkedIn Profile](https://www.linkedin.com/in/ahkamboh/)
+- **Reach out me**: [LinkedIn Profile](https://www.linkedin.com/in/ahkamboh/)
