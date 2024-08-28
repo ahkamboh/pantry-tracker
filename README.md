@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pantry Tracker
+
+Pantry Tracker is a web application designed to help users manage and track their pantry inventory effectively. Built with a modern tech stack, Pantry Tracker provides a seamless user experience with a visually appealing interface and robust functionality to keep track of pantry items in real-time.
+
+## Overview
+
+Pantry Tracker allows users to add, update, and delete items in their pantry while providing real-time inventory tracking. The application is built using Next.js with TypeScript, enhancing both the developer experience and application performance. To create an engaging and interactive user experience, Matter.js is used for hero section animations. Authentication is securely managed using Clerk, and Firebase is used for data storage and real-time synchronization.
+
+## Key Features
+
+- **Real-Time Inventory Management**: Add, update, and delete pantry items with real-time updates.
+- **Secure Authentication**: Clerk integration ensures secure and seamless user authentication.
+- **Hero Section Animation**: Interactive and engaging hero section animations using Matter.js 2D library.
+- **Responsive Design**: Built with responsive design principles for an optimal user experience across all devices.
+- **Firebase Integration**: Utilizes Firebase for real-time data storage and synchronization of pantry items.
+
+## Tech Stack
+
+Pantry Tracker is built using a modern tech stack to ensure high performance, scalability, and ease of integration:
+
+### Frontend
+
+- **Next.js**: A React framework for building server-side rendering and static web applications with TypeScript support.
+- **TypeScript**: For static type checking and improved code quality.
+- **Tailwind CSS**: A utility-first CSS framework for fast UI development.
+- **Matter.js**: A 2D physics engine for creating visually engaging animations in the hero section.
+
+### Backend
+
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **Firebase**: Used for real-time database storage, allowing users to store and track pantry items efficiently.
+
+### Authentication
+
+- **Clerk**: Secure user authentication service to manage user sign-ups, logins, and sessions.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Node.js** (v14.x or later)
+- **npm** (v6.x or later) or **yarn** (v1.22.x or later)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository**
 
-## Learn More
+   ```bash
+   git clone https://github.com/ahkamboh/pantry-tracker.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install NPM packages**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   Navigate to the project directory and run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd pantry-tracker
+   npm install
+   # or
+   yarn install
+   ```
 
-## Deploy on Vercel
+3. **Run the development server**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Usage
+
+- **Manage Pantry Items**: Log in to your Pantry Tracker account and start adding, updating, or deleting pantry items.
+- **Real-Time Sync**: Utilize Firebase for real-time synchronization of your pantry inventory.
+- **Interactive Animations**: Enjoy interactive hero section animations powered by Matter.js.
+- **Secure Authentication**: Sign up or log in securely using Clerk for a seamless experience.
+
+## Contributing
+
+We welcome contributions to Pantry Tracker! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+ 
+## Contact
+
+- **Reach out me **: [LinkedIn Profile](https://www.linkedin.com/in/ahkamboh/)
